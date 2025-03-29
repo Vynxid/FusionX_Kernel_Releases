@@ -4,16 +4,21 @@ on:
   workflow_dispatch:
     inputs:
       BUILD_TITLE:
-        description: 'FusionX Kernel KSUN+SUSFS'
+        description: 'Custom Message'
         required: false
       KERNEL_TREE:
         description: 'Kernel Tree'
         default: 'https://github.com/SenseiiX/fusionX_sm8250'
         required: true
       KERNEL_TREE_BRANCH:
-        description: 'Kernel Tree Branch'
+        description: 'Kernel Tree Branch 1'
+        default: 'exp-sus'
         required: false
-        default: 'munch'
+        type: choice
+        options:
+          - munch-sus
+          - exp-sus
+          - dev-base
       CODENAME:
         description: 'Phone Codename'
         default: 'MUNCH'
