@@ -12,13 +12,12 @@ on:
         required: true
       KERNEL_TREE_BRANCH:
         description: 'Kernel Tree Branch 1'
-        default: 'exp-sus'
+        default: 'munch-sus'
         required: false
         type: choice
         options:
           - munch-sus
-          - exp-sus
-          - dev-base
+          - munch-next
       CODENAME:
         description: 'Phone Codename'
         default: 'MUNCH'
