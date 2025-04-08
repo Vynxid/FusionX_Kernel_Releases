@@ -4,7 +4,7 @@ Custom Kernel with latest Linux tag, Google ASB tag, and CodeLinaro tag. Compile
 
 Supported Rom : AOSP, CLO, MIUI
 
-![Tech Company Presentation](https://github.com/SenseiiX/SenseiiX/blob/main/Black%20and%20Grey%203D%20Shapes%20Tech%20Company%20Presentation.jpg?raw=true)
+![Tech Company Presentation](https://github.com/SenseiiX/SenseiiX/blob/main/fusionx.png?raw=true)
 
 ---
 ## 📌 **Features**
