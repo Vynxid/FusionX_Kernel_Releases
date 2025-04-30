@@ -12,12 +12,12 @@ on:
         required: true
       KERNEL_TREE_BRANCH:
         description: 'Kernel Tree Branch 1'
-        default: 'munch-sus'
+        default: 'stable-sus'
         required: false
         type: choice
         options:
-          - munch-sus
-          - munch-next
+          - stable-sus
+          - stable-next
       CODENAME:
         description: 'Phone Codename'
         default: 'MUNCH'
@@ -28,7 +28,7 @@ on:
         required: false
       ANYKERNEL_BRANCH:
         description: 'AnyKernel Branch (defaults to codename)'
-        default: 'fusionX'
+        default: 'effcpu'
         required: false
       UPLOAD_TO_RELEASE:
         description: 'Upload to release'
