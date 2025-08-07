@@ -141,9 +141,9 @@ jobs:
           <b>Action</b>: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     - name: Upload mem module
-        uses: actions/upload-artifact@v4
-        with:
+    - name: Upload mem module
+      uses: actions/upload-artifact@v4
+      with:
           name: memodule
           path: "./out/drivers/memkernel/vinn_memk.ko"
     - uses: actions/upload-artifact@v4
