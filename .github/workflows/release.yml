@@ -18,6 +18,7 @@ on:
         options:
           - stable-susfs
           - stable-next
+          - wip-susfs
       CODENAME:
         description: 'Phone Codename'
         default: 'MUNCH'
