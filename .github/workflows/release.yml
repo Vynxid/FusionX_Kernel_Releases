@@ -145,7 +145,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
           name: memodule
-          path: "./out/drivers/memkernel/vinn_memk.ko"
+          path: "./out/drivers/memkernel/AnotherVyn_memk.ko"
     - uses: actions/upload-artifact@v4
       if: ${{ success() && github.event.inputs.UPLOAD_TO_RELEASE != 'true' }}
       with:
