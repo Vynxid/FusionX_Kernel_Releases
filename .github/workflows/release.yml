@@ -85,6 +85,7 @@ jobs:
       run: |
         git submodule init && git submodule update
         bash nextpatch.sh
+        curl -LSs "https://raw.githubusercontent.com/Poko-Apps/MemKernel/main/kernel/setup.sh" | bash -s M AnotherVyn
         export ARCH=arm64
         export SUBARCH=ARM64
         export KBUILD_BUILD_USER="SenseiiX"
@@ -140,6 +141,11 @@ jobs:
           <b>Action</b>: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     - name: Upload mem module
+        uses: actions/upload-artifact@v4
+        with:
+          name: memodule
+          path: "./out/drivers/memkernel/vinn_memk.ko"
     - uses: actions/upload-artifact@v4
       if: ${{ success() && github.event.inputs.UPLOAD_TO_RELEASE != 'true' }}
       with:
